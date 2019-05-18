@@ -1,0 +1,249 @@
+html {
+    scroll-behavior: smooth;
+}
+.primary-color {
+    background-color:#53cde2;
+    color:#edf9fc;
+}
+
+.icon-carousel-color {
+  color:#53cde2;
+}
+.navbar {
+    position: fixed;
+    width:100%;
+
+    z-index: 2;
+}
+.nav-link, .navbar-brand {
+    color:white;
+} 
+.nav-link:hover {
+    color: #F0EEC8;
+}
+
+.navbar-brand:hover {
+    color: #F0EEC8;
+}
+
+.icon-primary {
+  color:#53cde2;
+}
+.navbar-brand {
+    font-family: 'Baloo', cursive;
+    padding-left:4rem;
+    font-size:2em;  
+}
+.navbar-nav {
+    padding-right:4rem;
+}
+
+.testimonial-item {
+  height: 350px;
+  width: 300px;
+}
+
+.page-section {
+  padding: 100px 0;
+}
+
+.btn {
+  background-color: #53cde2;
+  color:white;
+  margin-top:1rem;
+}
+
+.btn:hover {
+  border-color:#53cde2
+}
+
+.page-section h2.section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.page-section h3.section-subheading {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 75px;
+  text-transform: none;
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+header.masthead {
+    position: relative;
+    background-color: #343a40;
+    height:700px;
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .service-heading {
+    margin: 15px 0;
+    text-transform: none;
+  }
+
+
+  header.masthead .overlay {
+    position: absolute;
+    background-color: #212529;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+  }
+  
+  header.masthead h1 {
+    padding-top:2rem;
+    font-size: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    header.masthead {
+      padding-top: 12rem;
+      padding-bottom: 12rem;
+    }
+    header.masthead h1 {
+      font-size: 3rem;
+    }
+  }
+  .showcase .showcase-text {
+    padding: 2rem;
+  }
+  
+  .showcase .showcase-img {
+    min-height: 30rem;
+    background-size: cover;
+  }
+  
+  @media (min-width: 768px) {
+    .showcase .showcase-text {
+      padding: 7rem;
+    }
+  }
+
+  .about .about-text {
+    padding: 3rem;
+  }
+  
+  .about .about-img {
+    min-height: 30rem;
+    background-size: cover;
+  }
+  
+  @media (min-width: 768px) {
+    .about .about-text {
+      padding: 7rem;
+    }
+  }
+      
+
+.testimonials {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.testimonials .testimonial-item {
+  max-width: 18rem;
+}
+
+.testimonials .testimonial-item img {
+  max-width: 12rem;
+  -webkit-box-shadow: 0px 5px 5px 0px #adb5bd;
+  box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+.whyus {
+  margin-top: 1rem;
+}
+
+footer.footer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .list-inline-item a {
+    color:white;
+  }
+
+.main-side {
+  max-width: 1100px;
+  margin: 0px auto 20px; 
+  padding-top:30px;
+}
+
+#branch-gallery {
+  padding-top:60px;
+}
+
+#branch-gallery .main-gallery {
+  text-align: center;
+  font-size: 0px;
+}
+
+#branch-gallery .main-gallery .gallery-group {
+  display: inline-block;
+  width: 50%;
+}
+
+#branch-gallery .main-gallery .gallery-group.mini {
+  width: 25%;
+}
+
+#branch-gallery .main-gallery .gallery-group .gallery-img {
+  position: relative;
+  height: 35vw;
+}
+
+#branch-gallery .main-gallery .gallery-group .gallery-img>div {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  background-color: lightgrey;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#branch-gallery .main-gallery .gallery-group.mini .gallery-img {
+  height: 17.5vw;
+}
+
+#pricerate {
+  padding: 40px 0px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#pricerate .pricerate {
+  max-width: 800px;
+  margin: auto;
+}
+
+
+#pricerate .pricerate h3 {
+  margin: 0px 0px 20px;
+  font-size: 3rem;
+}
+#pricerate .pricerate h4 {
+  margin-top: 20px;
+  font-size: 2rem;
+}
+.nopadding {
+  padding: 0px;
+}
+
+@media (min-width: 992px) 
+ {.col-md-12 {
+    width: 100%;
+} }
+
+#map .map-descript {
+  padding: 40px;
+  min-height: 50vh;
+} 
