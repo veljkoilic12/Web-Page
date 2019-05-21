@@ -1,9 +1,46 @@
-html {
-    scroll-behavior: smooth;
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../images/loading.gif) center no-repeat #fff;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+hr {
+  margin-top:50px;
+  border-top: 2px dashed #53cde2;
+}
+ h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+ }
+body {
+  overflow-x: hidden;
+  position: relative;
+  font-family: 'Karla', sans-serif;
+  font-weight: 200;
+  scroll-behavior: smooth;
+}
+
 .primary-color {
     background-color:#53cde2;
     color:#edf9fc;
+}
+
+.alternative-text-color {
+  color:#005792;
+}
+
+.primary-text-color {
+  color:#53cde2;
 }
 
 .icon-carousel-color {
@@ -17,22 +54,23 @@ html {
 }
 .nav-link, .navbar-brand {
     color:white;
-} 
+}
 .nav-link:hover {
-    color: #F0EEC8;
+    color: #d1f4fa
 }
 
 .navbar-brand:hover {
-    color: #F0EEC8;
+    color: #d1f4fa
 }
 
 .icon-primary {
   color:#53cde2;
 }
 .navbar-brand {
-    font-family: 'Baloo', cursive;
+  font-family: 'Karla', sans-serif;
+
     padding-left:4rem;
-    font-size:2em;  
+    font-size:2em;
 }
 .navbar-nav {
     padding-right:4rem;
@@ -44,17 +82,21 @@ html {
 }
 
 .page-section {
-  padding: 100px 0;
+  padding-top: 60px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 80px;
 }
 
-.btn {
+.btn-main {
   background-color: #53cde2;
   color:white;
   margin-top:1rem;
 }
 
-.btn:hover {
-  border-color:#53cde2
+.btn-main:hover {
+  background-color: #005792;
+  color:white;
 }
 
 .page-section h2.section-heading {
@@ -74,10 +116,29 @@ html {
 header.masthead {
     position: relative;
     background-color: #343a40;
-    height:700px;
-    background-size: cover;
     padding-top: 8rem;
     padding-bottom: 8rem;
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  header.sechead {
+    position: relative;
+    background-color: #343a40;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
   .service-heading {
@@ -90,17 +151,17 @@ header.masthead {
     position: absolute;
     background-color: #212529;
     height: 100%;
-    width: 100%;
+    min-width: 100%;
     top: 0;
     left: 0;
     opacity: 0.3;
   }
-  
+
   header.masthead h1 {
     padding-top:2rem;
     font-size: 2rem;
   }
-  
+
   @media (min-width: 768px) {
     header.masthead {
       padding-top: 12rem;
@@ -110,15 +171,16 @@ header.masthead {
       font-size: 3rem;
     }
   }
+
   .showcase .showcase-text {
     padding: 2rem;
   }
-  
+
   .showcase .showcase-img {
     min-height: 30rem;
     background-size: cover;
   }
-  
+
   @media (min-width: 768px) {
     .showcase .showcase-text {
       padding: 7rem;
@@ -128,18 +190,18 @@ header.masthead {
   .about .about-text {
     padding: 3rem;
   }
-  
+
   .about .about-img {
     min-height: 30rem;
     background-size: cover;
   }
-  
-  @media (min-width: 768px) {
+
+  @media (min-width: 992px) {
     .about .about-text {
       padding: 7rem;
     }
   }
-      
+ 
 
 .testimonials {
   padding-top: 7rem;
@@ -168,12 +230,16 @@ footer.footer {
   .list-inline-item a {
     color:white;
   }
+  .list-inline-item a:hover {
+    color: #005792;
+  }
 
 .main-side {
   max-width: 1100px;
-  margin: 0px auto 20px; 
+  margin: 0px auto 20px;
   padding-top:30px;
 }
+
 
 #branch-gallery {
   padding-top:60px;
@@ -238,12 +304,13 @@ footer.footer {
   padding: 0px;
 }
 
-@media (min-width: 992px) 
- {.col-md-12 {
-    width: 100%;
-} }
-
 #map .map-descript {
   padding: 40px;
   min-height: 50vh;
-} 
+}
+
+@media (min-width: 992px) {
+  .col-md-12 {
+    width: 100%;
+  } 
+}

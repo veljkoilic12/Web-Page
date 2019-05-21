@@ -10,7 +10,11 @@ app.get("/", function(req, res) {
 });
 
 app.get("/vodeni-sportovi", function(req, res) {
-  res.sendFile(__dirname + "/vodeni-sportovi.html")
+  res.sendFile(__dirname + "/vodeni-sportovi.html");
+});
+
+app.get("/atv", function(req, res){
+  res.sendFile(__dirname + "/atv-quad-ture.html");
 });
 
 app.listen(process.env.PORT || 3000, function() {
