@@ -1,27 +1,39 @@
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-.se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(../images/loading.gif) center no-repeat #fff;
+.no-js #loader {
+  display: none;
 }
+
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../images/loading.gif) center no-repeat #fff;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 hr {
-  margin-top:50px;
+  margin-top: 50px;
   border-top: 2px dashed #53cde2;
 }
- h1, h2, h3, h4 {
+
+h1, h2, h3, h4 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   text-transform: uppercase;
- }
+}
+
 body {
   overflow-x: hidden;
   position: relative;
@@ -31,49 +43,52 @@ body {
 }
 
 .primary-color {
-    background-color:#53cde2;
-    color:#edf9fc;
+  background-color: #53cde2;
+  color: #edf9fc;
 }
 
 .alternative-text-color {
-  color:#005792;
+  color: #005792;
 }
 
 .primary-text-color {
-  color:#53cde2;
+  color: #53cde2;
 }
 
 .icon-carousel-color {
-  color:#53cde2;
+  color: #53cde2;
 }
-.navbar {
-    position: fixed;
-    width:100%;
 
-    z-index: 2;
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
+
 .nav-link, .navbar-brand {
-    color:white;
+  color: white;
 }
+
 .nav-link:hover {
-    color: #d1f4fa
+  color: #d1f4fa
 }
 
 .navbar-brand:hover {
-    color: #d1f4fa
+  color: #d1f4fa
 }
 
 .icon-primary {
-  color:#53cde2;
+  color: #53cde2;
 }
+
 .navbar-brand {
   font-family: 'Karla', sans-serif;
-
-    padding-left:4rem;
-    font-size:2em;
+  padding-left: 4rem;
+  font-size: 2em;
 }
+
 .navbar-nav {
-    padding-right:4rem;
+  padding-right: 4rem;
 }
 
 .testimonial-item {
@@ -90,17 +105,16 @@ body {
 
 .btn-main {
   background-color: #53cde2;
-  color:white;
-  margin-top:1rem;
+  color: white;
+  margin-top: 1rem;
 }
 
 .btn-main:hover {
   background-color: #005792;
-  color:white;
+  color: white;
 }
 
 .page-section h2.section-heading {
-  font-size: 40px;
   margin-top: 0;
   margin-bottom: 15px;
 }
@@ -113,99 +127,79 @@ body {
   text-transform: none;
   font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
 header.masthead {
-    position: relative;
-    background-color: #343a40;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    height: 65vh;
-    min-height: 350px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+  position: relative;
+  background-color: #343a40;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-  header.sechead {
-    position: relative;
-    background-color: #343a40;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    height: 100vh;
-    min-height: 350px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+header.sechead {
+  position: relative;
+  background-color: #343a40;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-  .service-heading {
-    margin: 15px 0;
-    text-transform: none;
-  }
+.service-heading {
+  margin: 15px 0;
+}
 
+header.masthead .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  min-width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
 
-  header.masthead .overlay {
-    position: absolute;
-    background-color: #212529;
-    height: 100%;
-    min-width: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0.3;
-  }
+header.masthead h1 {
+  padding-top: 2rem;
+  font-size: 2rem;
+}
 
-  header.masthead h1 {
-    padding-top:2rem;
-    font-size: 2rem;
-  }
+header.masthead h1 {
+  font-size: 3rem;
+}
+}
 
-  @media (min-width: 768px) {
-    header.masthead {
-      padding-top: 12rem;
-      padding-bottom: 12rem;
-    }
-    header.masthead h1 {
-      font-size: 3rem;
-    }
-  }
+.showcase .showcase-text {
+  padding: 2rem;
+}
 
-  .showcase .showcase-text {
-    padding: 2rem;
-  }
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
 
-  .showcase .showcase-img {
-    min-height: 30rem;
-    background-size: cover;
-  }
+.about .about-text {
+  padding: 3rem;
+}
 
-  @media (min-width: 768px) {
-    .showcase .showcase-text {
-      padding: 7rem;
-    }
-  }
-
-  .about .about-text {
-    padding: 3rem;
-  }
-
-  .about .about-img {
-    min-height: 30rem;
-    background-size: cover;
-  }
-
-  @media (min-width: 992px) {
-    .about .about-text {
-      padding: 7rem;
-    }
-  }
- 
+.about .about-img {
+  min-height: 30rem;
+  background-size: cover;
+}
 
 .testimonials {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding: 5rem 0;
 }
 
 .testimonials .testimonial-item {
@@ -222,27 +216,22 @@ header.masthead {
   margin-top: 1rem;
 }
 
-footer.footer {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
+.list-inline-item a {
+  color: white;
+}
 
-  .list-inline-item a {
-    color:white;
-  }
-  .list-inline-item a:hover {
-    color: #005792;
-  }
+.list-inline-item a:hover {
+  color: #005792;
+}
 
 .main-side {
   max-width: 1100px;
   margin: 0px auto 20px;
-  padding-top:30px;
+  padding-top: 30px;
 }
 
-
 #branch-gallery {
-  padding-top:60px;
+  padding-top: 60px;
 }
 
 #branch-gallery .main-gallery {
@@ -275,6 +264,7 @@ footer.footer {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 #branch-gallery .main-gallery .gallery-group.mini .gallery-img {
   height: 17.5vw;
 }
@@ -291,15 +281,16 @@ footer.footer {
   margin: auto;
 }
 
-
 #pricerate .pricerate h3 {
   margin: 0px 0px 20px;
   font-size: 3rem;
 }
+
 #pricerate .pricerate h4 {
   margin-top: 20px;
   font-size: 2rem;
 }
+
 .nopadding {
   padding: 0px;
 }
@@ -309,8 +300,128 @@ footer.footer {
   min-height: 50vh;
 }
 
+.footer {
+  padding: 3rem 0;
+}
+
+.h3-foot-text {
+  box-sizing: border-box;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  font-size: 24px;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  letter-spacing: normal;
+  orphans: 2;
+  text-align: start;
+  text-indent: 0px;
+  text-transform: none;
+  white-space: normal;
+  widows: 2;
+  word-spacing: 0px;
+  -webkit-text-stroke-width: 0px;
+  text-decoration-style: initial;
+  text-decoration-color: initial;
+}
+
+@media (max-width: 992px) {
+  .about-div {
+    padding: 0 15px;
+  }
+
+  .testimonials {
+    padding: 1rem 0;
+  }
+
+  .footer {
+    padding: 1rem 0;
+  }
+
+  .pricerate {
+    padding: 0 10px;
+  }
+
+  #introduction {
+    padding: 0 15px;
+  }
+
+  h5, p, a, label, .foot-text {
+    font-size: 200%;
+  }
+
+  .h3-foot-text{
+    font-size: 5rem;
+    margin: 25px 0;
+  }
+
+  .small {
+    font-size: 140%;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 4.5rem;
+  }
+
+  h3 {
+    font-size: 4rem;
+  }
+
+  h4 {
+    font-size: 3.5rem;
+  }
+
+  .lead {
+    font-size: 2rem;
+  }
+
+  .btn-lg {
+    padding: 15px 21px;
+    font-size: 30px;
+    line-height: 1.3333333;
+    border-radius: 10px;
+  }
+
+  .kartica {
+    padding: 20px 0;
+  }
+
+  #pricerate .pricerate h4 {
+    margin-top: 20px;
+    font-size: 3.5rem;
+  }
+
+  th, td {
+    font-size: 2rem;
+  }
+
+  .form-control{
+    height: calc(2.5em + 1rem + 2px);
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+
+  .showcase .showcase-text {
+    padding: 7rem;
+  }
+}
+
 @media (min-width: 992px) {
-  .col-md-12 {
-    width: 100%;
-  } 
+  .about .about-text {
+    padding: 7rem;
+  }
 }
